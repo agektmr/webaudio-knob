@@ -5,12 +5,15 @@
 
 ## How to use
 1. load polymer.js
-2. link to webaudio-knob component  
+2. link to webaudio-knob component
+
 ```
 <script src="http://www.polymer-project.org/polymer-all/polymer/polymer.js">
 <link rel="import" href="https://raw.github.com/agektmr/webaudio-knob/master/components/knob.html">
 ```
-3. insert `webaudio-knob` element  
+
+3. insert `webaudio-knob` element
+
 ```
 <webaudio-knob></webaudio-knob>
 ```
@@ -26,6 +29,7 @@
 
 ## Events
 - **change**: change event emitted everytime value changes
+
 ```
 var knobs = document.getElementsByTagName('webaudio-knob');
 for (var i = 0; i < knobs.length; i++) {
