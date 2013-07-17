@@ -30,36 +30,36 @@ var knob = document.createElement('webaudio-knob');
 - with 'shift' key pressed, value changes by 1 (otherwise per `step`)
 
 ## Attributes
-### min
+### 'min'
 **description**: min value of the knob  
-**default**: 0
+**default**: `0`
 
-### max
+### 'max'
 **description**: max value of the knob  
-**default**: 127
+**default**: `127`
 
-### value
+### 'value'
 **description**: value of the knob  
-**default**: 0
+**default**: `0`
 
-### step
+### 'step'
 **description**: value change steps by moving mouse  
-**default**: 3
+**default**: `3`
 
-### splites
+### 'splites'
 **description**: number of splites your knob image has  
-**default**: 30
+**default**: `30`
 
-### diameter
+### 'diameter'
 **description**: diameter of single knob  
-**default**: 64
+**default**: `64`
 
-### src
+### 'src'
 **description**: path to knob image resource (relative from where you are refering)  
-**default**: 'img/org_amp.png'
+**default**: `'img/org_amp.png'`
 
 ## Events
-###change
+### 'change'
 **description**: 'change' event emitted everytime value changes
 
 ```
