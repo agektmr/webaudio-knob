@@ -30,16 +30,37 @@ var knob = document.createElement('webaudio-knob');
 - with 'shift' key pressed, value changes by 1 (otherwise per `step`)
 
 ## Attributes
-- **min**: min value of the knob (default: 0)
-- **max**: max value of the knob (default: 127)
-- **value**: value of the knob (default: 0)
-- **step**: step by moving mouse (default: 3)
-- **splites**: number of splites your knob image has (default: 30)
-- **diameter**: diameter of single knob (default: 64)
-- **src**: path to knob image resource (default: 'img/org_amp.png')
+### min
+**description**: min value of the knob  
+**default**: 0
+
+### max
+**description**: max value of the knob  
+**default**: 127
+
+### value
+**description**: value of the knob  
+**default**: 0
+
+### step
+**description**: value change steps by moving mouse  
+**default**: 3
+
+### splites
+**description**: number of splites your knob image has  
+**default**: 30
+
+### diameter
+**description**: diameter of single knob  
+**default**: 64
+
+### src
+**description**: path to knob image resource (relative from where you are refering)  
+**default**: 'img/org_amp.png'
 
 ## Events
-- **change**: 'change' event emitted everytime value changes
+###change
+**description**: 'change' event emitted everytime value changes
 
 ```
 var knobs = document.getElementsByTagName('webaudio-knob');
@@ -50,3 +71,11 @@ for (var i = 0; i < knobs.length; i++) {
   });
 }
 ```
+
+## Creating knob images
+- Go to [WebKnobMan](http://www.g200kg.com/en/webknobman/gallery.php)
+- Find your favorite knob design and click 'Open with WebKnobMan'
+- Click on 'Export' to download `png` file
+- Of course, you can create your own!
+
+**Note: comply with license requirements**
