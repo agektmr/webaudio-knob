@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Knob Example</title>
+    <script src="js/polymer.min.js"></script>
+    <link rel="import" href="components/knob.html">
+    <script>
+    window.onload = function() {
+      // var knobs = document.querySelectorAll('webaudio-knob');
+      // for (var i = 0; i < knobs.length; i++) {
+      //   knobs[i].addEventListener('change', function(e) {
+      //     console.log(e);
+      //   })
+      // }
+    }
+    </script>
+  </head>
+  <body style="background-color: gray;">
+    <webaudio-knob></webaudio-knob>
+    <webaudio-knob src="img/knob_64_white1.png" value="0" range="29"></webaudio-knob>
+    <webaudio-knob src="img/color_knob.png" value="0" range="29" diameter="46"></webaudio-knob>
+    <webaudio-knob src="img/MS2000.png" value="0" range="100"></webaudio-knob>
+    <webaudio-knob src="img/MiniBrute.png" value="0" min="-127" max="127" range="100"></webaudio-knob>
+  </body>
+</html>
