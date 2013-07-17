@@ -1,4 +1,4 @@
-<polymer-element name="webaudio-knob" attributes="value min max step range diameter src" on-mousedown="mousedown">
+<polymer-element name="webaudio-knob" attributes="value min max step splites diameter src" on-mousedown="mousedown">
   <template>
     <div class="knob" id="knob">
       <span id="value-tip">{{value}}</span>
@@ -48,7 +48,7 @@
       var update = function(value) {
         this.value = value < this.min ? this.min : value > this.max ? this.max : value;
         var range = Math.abs(this.min) + Math.abs(this.max);
-        var value = '-' + ~~(this.range / range * (range - this.min + this.value) + 1) * this.diameter + 'px';
+        var value = '-' + ~~(this.splites / range * (range - this.min + this.value) + 1) * this.diameter + 'px';
         this.$['knob'].style.backgroundPositionY = value;
         this.fire('change');
       };
@@ -65,7 +65,7 @@
         max:        127,
         diameter:   64,
         step:       3,
-        range:      30,
+        splites:    30,
         src:        'img/org_amp.png',
         startPos:   null,
         startVal:   0,
