@@ -33,7 +33,7 @@
   <script>
     Polymer('webaudio-knob', (function() {
       var mousemove = function(e) {
-        var offset = (this.startPos - e.y) || 0;
+        var offset = (this.startPos - e.pageY) || 0;
         var value = this.startVal + (e.shiftKey ? ~~(offset / 3) : this.step * offset);
         update.bind(this)(value);
       };
@@ -49,7 +49,11 @@
         this.value = value < this.min ? this.min : value > this.max ? this.max : value;
         var range = Math.abs(this.min) + Math.abs(this.max);
         var value = '-' + ~~(this.splites / range * (range - this.min + this.value) + 1) * this.diameter + 'px';
-        this.$['knob'].style.backgroundPositionY = value;
+        if('backgroundPositionY' in this.$['knob'].style){
+          this.$['knob'].style.backgroundPositionY = value;
+        } else {
+          this.$['knob'].style.backgroundPosition="center " + value;
+        }
         this.fire('change');
       };
 
@@ -71,7 +75,7 @@
         startVal:   0,
         mousedown:  function(e) {
           this.$['value-tip'].style.opacity = 1;
-          this.startPos = e.y;
+          this.startPos = e.pageY;
           this.startVal = this.value;
           this.boundMousemove = mousemove.bind(this);
           this.boundCancel = cancel.bind(this);
