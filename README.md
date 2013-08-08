@@ -17,7 +17,7 @@
 - insert `webaudio-knob` element
 
 ```
-<webaudio-knob src="img/MiniBrute.png" min="-127" max="127" value="0" step="3" diameter="" splites="100"></webaudio-knob>
+<webaudio-knob src="img/MiniBrute.png" min="-127" max="127" value="0" step="3" diameter="" sprites="100"></webaudio-knob>
 ```
 
 - create imperatively
@@ -46,8 +46,8 @@ var knob = document.createElement('webaudio-knob');
 **description**: value change steps by moving mouse  
 **default**: `3`
 
-### 'splites'
-**description**: number of splites your knob image has  
+### 'sprites'
+**description**: number of sprites your knob image has  
 **default**: `30`
 
 ### 'diameter'
