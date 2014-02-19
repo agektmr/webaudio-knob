@@ -1,3 +1,5 @@
+_**If you are interested in this project, please check [webaudio-controls](https://github.com/g200kg/webaudio-controls) by @g200kg as well. webaudio-controls has a fork of this project + slider, switch and even keyboard. Touch enabled too!**_
+
 # Polymer Knob Example
 
 ## Live Demo
