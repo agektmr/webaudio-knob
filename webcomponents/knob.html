@@ -64,6 +64,11 @@
           this.$['knob'].style.background = 'url('+this.src+')';
           update.bind(this)(this.value);
         },
+        attributeChanged: function(attrName, oldVal, newVal) {
+          if (attrName == 'value') {
+            update.bind(this)(newVal);
+          }
+        },       
         value:      0,
         min:        0,
         max:        127,
