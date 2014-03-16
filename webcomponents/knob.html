@@ -43,7 +43,7 @@
         this.$['value-tip'].style.opacity = 0;
         window.removeEventListener('mousemove', this.boundMousemove, true);
         window.removeEventListener('mouseup', this.boundCancel, true);
-        this.fire('change');
+        this.fire('cancel');
       };
 
       var update = function(value) {
