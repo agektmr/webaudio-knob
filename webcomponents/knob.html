@@ -43,6 +43,7 @@
         this.$['value-tip'].style.opacity = 0;
         window.removeEventListener('mousemove', this.boundMousemove, true);
         window.removeEventListener('mouseup', this.boundCancel, true);
+        this.fire('cancel');
       };
 
       var update = function(value) {
@@ -64,6 +65,9 @@
           this.$['knob'].style.background = 'url('+this.src+')';
           update.bind(this)(this.value);
         },
+        valueChanged: function(oldVal, newVal) {
+          update.bind(this)(newVal);
+        },       
         value:      0,
         min:        0,
         max:        127,
