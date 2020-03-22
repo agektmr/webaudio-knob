@@ -1,0 +1,23 @@
+{
+  "name": "webaudio-controls",
+  "version": "1.0.0",
+  "description": "**WebAudioControls** is GUI parts Custom Elements library for Web application using WebComponents.   Especially suitable for audio-applications like VST plugins.",
+  "main": "webaudio-controls.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agektmr/webaudio-knob.git"
+  },
+  "author": "agektmr@",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/agektmr/webaudio-knob/issues"
+  },
+  "homepage": "https://github.com/agektmr/webaudio-knob#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "lit-element": "^2.3.1"
+  }
+}
